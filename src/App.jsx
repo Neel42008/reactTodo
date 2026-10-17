@@ -48,9 +48,11 @@ function App() {
     <TodoProvider
       value={{ todos, addTodo, updateTodo, deleteTodo, toggleComplete }}
     >
-      <div className=" bg-[url('/Gemini_Generated_Image_naxzndnaxzndnaxz.png')] bg-cover bg-center min-h-screen py-8 ">
-        <div className="w-full max-w-2xl  mx-auto rounded-lg  px-4 py-5 text-white backdrop-blur-sm bg-white/10 ">
-          <h1 className="text-2xl font-bold text-center mb-8 mt-2">
+      <div className="   bg-[url('/Gemini_Generated_Image_1ujen91ujen91uje.png')] bg-cover bg-center min-h-screen py-8 bg-fixed  ">
+
+
+        <div className="w-full max-w-xl  mx-auto rounded-lg  px-4 py-5 text-shadow-gray-700 backdrop-blur-sm bg-white/10 border-2 border-white/20 shadow-lg shadow-black/50 ">
+          <h1 className="text-2xl font-bold text-gray-900 text-center mb-8 mt-2">
             Manage Your Todos
           </h1>
           <div className="mb-4">
@@ -58,7 +60,7 @@ function App() {
             <TodoForm />
           </div>
 
-          <div className="flex flex-wrap gap-y-3">
+          <div className="flex flex-col gap-y-3 max-h-[55vh] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
             {/*Loop and Add TodoItem here */}
             {todos.map((todo) => (
               <div key={todo.id} className="w-full">

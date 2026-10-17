@@ -17,8 +17,8 @@ function TodoItem({ todo }) {
 
   return (
       <div
-          className={`flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-black/50 duration-300   ${
-              todo.completed ? "bg-emerald-300 text-black" : " text-white"
+          className={`flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-black/50 duration-300  font-sans font-semibold  ${
+              todo.completed ? "bg-[#00000076] text-white/50" : "text-black "
           }`}
       >
           <input
@@ -29,7 +29,7 @@ function TodoItem({ todo }) {
           />
           <input
               type="text"
-              className={`border outline-none w-full bg-transparent rounded-lg ${
+              className={`border  min-w-0 outline-none w-full bg-transparent rounded-lg ${
                   isTodoEditable ? "border-black/10 px-2" : "border-transparent"
               } ${todo.completed ? "line-through" : ""}`}
               value={todoMsg}

@@ -48,7 +48,7 @@ function App() {
     <TodoProvider
       value={{ todos, addTodo, updateTodo, deleteTodo, toggleComplete }}
     >
-      <div className=" bg-[url('/DarkBlue.jpg')] bg-cover bg-center min-h-screen py-8 ">
+      <div className=" bg-[url('/Gemini_Generated_Image_naxzndnaxzndnaxz.png')] bg-cover bg-center min-h-screen py-8 ">
         <div className="w-full max-w-2xl  mx-auto rounded-lg  px-4 py-5 text-white backdrop-blur-sm bg-white/10 ">
           <h1 className="text-2xl font-bold text-center mb-8 mt-2">
             Manage Your Todos
